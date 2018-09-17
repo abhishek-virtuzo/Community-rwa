@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#cccccc</color>
+    <color name="colorAccent">#2196f3</color>
+
+    <color name="colorAppBackground">#e6e6e6</color>
+    <color name="colorSanskritRed">#ff0006</color>
+    <color name="colorSanskritYellow">#ffff19</color>
+    <color name="colorSanskritBlue">#0000fe</color>
+
+    <color name="colorPrakritLightYellow">#f9ff98</color>
+    <color name="colorPrakritLightGreen">#c8ff01</color>
+    <color name="colorPrakritGreen">#339933</color>
+
+    <color name="colorText">#333333</color>
+    <color name="colorTagGrey">#808080</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="lightGrey">#dddddd</color>
+    <color name="lightBlue">#3498db</color>
+    <color name="darkBlue">#2980b9</color>
+    <color name="Red">#ff0006</color>
+    <color name="DarkGreen">#339933</color>
+    <color name="Orange">#FFA500</color>
+    <color name="color_unread">#E1EBEE</color>
+    <color name="color_read">#ffffff</color>
+
+    <color name="app_theme_color">#0000fe</color>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="1dp"
+        android:background="@drawable/black_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <virtuzo.abhishek.community.utils.SquareImageView
+            android:scaleType="fitXY"
+            android:id="@+id/squareImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

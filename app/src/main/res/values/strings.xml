@@ -1,0 +1,239 @@
+<resources>
+    <string name="app_name">RWA</string>
+
+    <!--Title-->
+    <string name="title_home">RWA</string>
+    <string name="title_login">Login</string>
+
+    <!--Post Button Title-->
+    <string name="title_share">Share</string>
+    <string name="title_like">Like</string>
+    <string name="title_comment">Comment</string>
+    <string name="title_gulak">Save</string>
+    <string name="title_rate">Rate</string>
+    <string name="title_showtag">Show Tags</string>
+
+    <!--Tabs-->
+    <string name="tab_patra">Color Feeds</string>
+    <string name="tab_prarang">Balance</string>
+    <string name="tab_gulak">Bank</string>
+    <string name="tab_city_portals">City Portals</string>
+
+    <string name="tab_home">Home</string>
+    <string name="tab_event_list">Events</string>
+    <string name="tab_bookmark">Bookmark</string>
+    <string name="tab_circular_list">Circulars</string>
+
+    <!--toolbar-->
+    <string name="toolbar_geography">Choose Geography</string>
+    <string name="toolbar_changelang">You can change your language later from profile setting</string>
+
+    <!-- Login Activity-->
+    <string name="hint_enternumber">Enter your contact number</string>
+    <string name="hint_entername">Write your name </string>
+    <string name="hint_enterotp">Enter O.T.P</string>
+    <string name="text_viewhindi">See posts in hindi</string>
+    <string name="text_viewenglish">See posts in english</string>
+    <string name="button_enter">Enter</string>
+    <string name="button_save">Save</string>
+    <string name="text_resend">Resend</string>
+    <string name="text_otpdetail">A six digit OTP has been sent by S.M.S to your mobile phone number. Please type this number here and press enter button</string>
+    <string name="text_otpdetail_init">A six digit OTP has been sent by S.M.S to \"</string>
+    <string name="text_otpdetail_later">\". Please type this number here and press enter button</string>
+
+    <string name="hint_enteraccesscode">Enter your access code</string>
+    <string name="button_verify">Verify</string>
+
+    <string name="text_menu_apptour">Tutorials</string>
+    <string name="text_menu_city_portals">-----CITY PORTALS----</string>
+    <string name="text_menu_rampur">Rampur Portal</string>
+    <string name="text_menu_meerut">Meerut Portal</string>
+    <string name="text_menu_lucknow">Lucknow Portal</string>
+    <string name="text_menu_jaunpur">Jaunpur Portal</string>
+    <string name="text_menu_branches_of_organisation">Branches of Organisation</string>
+
+    <string name="text_menu_changelang">Change Language</string>
+    <string name="text_menu_aboutus">About Us</string>
+    <string name="text_menu_panchang">Panchang</string>
+    <string name="text_menu_circular">Circular</string>
+    <string name="text_menu_profile">Profile</string>
+    <string name="text_menu_messages">Messages</string>
+    <string name="text_menu_importantnumbers">Important Numbers</string>
+    <string name="text_menu_officebearers">Office Bearers</string>
+    <string name="text_menu_blockresidents">Telephone Directory</string>
+    <string name="text_menu_map">Map</string>
+    <string name="text_menu_help">Help</string>
+    <string name="text_menu_sync">Sync</string>
+    <string name="text_menu_weblinks">Payment Links</string>
+    <string name="text_menu_complaints">Complaints</string>
+
+    <string name="text_menu_contacts">Contacts</string>
+    <string name="text_menu_blocks">Blocks</string>
+
+    <string name="cityportal_tab_rampur">Rampur</string>
+    <string name="cityportal_tab_meerut">Meerut</string>
+    <string name="cityportal_tab_lucknow">Lucknow</string>
+    <string name="cityportal_tab_jaunpur">Jaunpur</string>
+
+    <!-- SelectLanguage Activity-->
+    <string name="button_ahead">Continue Ahead</string>
+    <string name="button_submit">Submit</string>
+
+    <!--Prarang Fragment-->
+    <string name="text_sanskrit">Culture</string>
+    <string name="text_prakrit">Nature</string>
+    <string name="text_s1">Timelines</string>
+    <string name="text_s2">Man &amp;#38; his Senses</string>
+    <string name="text_s3">Man &amp;#38; his Inventions</string>
+    <string name="text_p1">Geography</string>
+    <string name="text_p2">Fauna</string>
+    <string name="text_p3">Flora</string>
+
+    <!-- Messages-->
+    <string name="msg_selectLang">Please select a language first.</string>
+    <string name="cond_selectothercity">*Select other cities.</string>
+
+    <!--Login Messages-->
+    <string name="msg_selectonegeo">Please select at least one Geography</string>
+    <string name="msg_selectoneviewpost">Please enable at least once view post.</string>
+    <string name="msg_alreadyselected">is already selected. Please select again.</string>
+
+    <string name="text_citypost">City</string>
+    <string name="text_regionpost">Region</string>
+    <string name="text_countrypost">Country</string>
+
+    <string name="text_imagepost">Gallery</string>
+    <string name="text_audiopost">Voice Notes</string>
+    <string name="text_videopost">Video Gallery</string>
+
+    <string name="filter_city">Choose City</string>
+    <string name="filter_region">Choose Region</string>
+    <string name="filter_country">Choose Country</string>
+
+    <string name="no_city">None</string>
+    <string name="no_region">None</string>
+    <string name="no_country">None</string>
+
+    <!--Portal Links-->
+
+    <string name="rampur_portal_links">http://rampur.prarang.in/</string>
+    <string name="meerut_portal_links">http://meerut.prarang.in/</string>
+    <string name="lucknow_portal_links">http://lucknow.prarang.in/</string>
+    <string name="jaunpur_portal_links">http://jaunpur.prarang.in/</string>
+
+    <!--Comments-->
+    <string name="text_addcomment">Add a comment here</string>
+    <string name="text_norecordfound">No record found!</string>
+
+    <!--Common Messages-->
+    <string name="msg_common">Something went wrong or network time out! please check your internet connection and settings.</string>
+    <string name="more">More</string>
+    <string name="viewmore">View More</string>
+    <string name="msg_uniquegeo">Please select a unique geography region</string>
+    <string name="msg_networkerror">Not connected to Internet. Saved “Letters” are available in the “Bank”</string>
+    <string name="msg_nointernet">Please check your internet connection.</string>
+    <string name="msg_nochitti">Please save letters in the bank</string>
+    <string name="msg_savebank">Saved</string>
+
+    <string name="sharetext_aboutus">Fill your life with the colour of Culture and nature, press the below link to download Prarang App.</string>
+    <string name="msg_exit">Please press again to exit</string>
+    <string name="msg_noletter">Sorry, no letters here, choose other geography!</string>
+    <!--tutorial-->
+    <string name="skip">Skip</string>
+    <string name="done">Done</string>
+    <string-array name="tutorial">
+        <item>
+            <title>Letter Page#</title>
+            <content>This section is divided into three parts. Based on the “Geography” selection, you will immediately get access to the Selected City, Region &amp; Country of your choice. You can also opt for “ALL” in each category  have access to all content.</content>
+        </item>
+        <item>
+            <title>Letter#</title>
+            <content>Once you choose  a picture, the whole letter will open. You can share, like, save the letter and comment on it.</content>
+        </item>
+        <item>
+            <title>Prarang Page#</title>
+            <content>This search functions helps to analysis a City/Region/City by classification and tagging of all letters relating to it. This section is divided into two major parts -Culture and Nature - and each part is sub -divided into three parts. These sub divisions further have ten parts, which make 60 complete sub-parts.</content>
+        </item>
+        <item>
+            <title>Bank Page#</title>
+            <content>Saved letters can be seen on this page. This page also works offline.</content>
+        </item>
+        <item>
+            <title>Choose Geography#</title>
+            <content>Select a City, Region &amp; Country of your interest. You can select one in each category or opt to choose “All “.By default “ALL” is already selected.</content>
+        </item>
+        <item>
+            <title>Profile Page#</title>
+            <content>Here you can upload your photo, select the language of your choice to read the Commands/ Buttons of the Application and also browse the application tutorials.</content>
+        </item>
+        <item>
+            <title>Choose Language#</title>
+            <content>You can select the language of your choice to read the Commands/ Buttons of the Application.</content>
+        </item>
+    </string-array>
+
+
+    <!--========================================================================================================================-->
+    <!-- AdMob ad unit IDs -->
+    <!--<string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <string name="admob_banner_id">ca-app-pub-2564889504860735/6848977603</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="invalid_mobileno">Please enter mobile number</string>
+
+    <string name="invalid_accesscode">Please enter access code</string>
+
+    <string name="profile_mobileno">Mobile number</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_accesscode">Access Code</string>
+    <string name="profile_dob">Date of Birth</string>
+    <string name="profile_address">Address</string>
+    <string name="profile_profession">Profession</string>
+    <string name="profile_about_you">About you</string>
+    <string name="text_comingsoon">Coming soon...</string>
+
+    <string name="text_houseno">House No.</string>
+    <string name="msg_sync_success">Sync successful</string>
+    <string name="tap_to_send_sms">Tap to\nSend SMS\nNow</string>
+    <string name="tap_to_cancel_sms">seconds left\n Tap to \nCancel SMS</string>
+
+    <string name="tap_to_call">TAP TO CALL :</string>
+    <string name="text_police">Police</string>
+    <string name="text_ambulance">Ambulance</string>
+    <string name="text_fire">Fire</string>
+    <string name="text_contacts">Emergency\nContacts</string>
+    <string name="text_setup">Message\nSetup</string>
+    <string name="tap_to_play">TAP TO PLAY :</string>
+    <string name="text_siren">SIREN</string>
+    <string name="text_whistle">WHISTLE</string>
+    <string name="text_panic">PANIC</string>
+    <string name="text_emergency_contacts">Emergency Contacts</string>
+    <string name="no_contacts_added">No contacts added</string>
+    <string name="text_your_emergency_message">YOUR EMERGENCY MESSAGE</string>
+    <string name="text_add_valid_message">Enter valid message</string>
+    <string name="your_timings_will_be_automatically_appended_to_your_emergency_message">** your timings will be automatically appended to your emergency message</string>
+    <string name="access_code_validated">Access Code validated</string>
+
+    <string name="no_complaints_entered">No complaints entered</string>
+    <string name="title_new_complaint">New complaint</string>
+    <string name="title_all_complaints">All complaints</string>
+    <string name="text_title">Title</string>
+    <string name="text_description">Description</string>
+    <string name="text_send">Send</string>
+    <string name="text_enter_title">Enter title</string>
+    <string name="text_enter_description">Enter description</string>
+    <string name="interested_in_blood_donation">Interested in blood donation ?</string>
+    <string name="toolbar_filter_resident">Filter</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="msg_complaint_saved_offline">Complaint saved offline.\nPlease turn on your internet connection</string>
+    <string name="text_interested">Interested</string>
+    <string name="text_map">Map</string>
+    <string name="text_share">Share</string>
+    <string name="text_add_to_calendar">Calendar</string>
+    <string name="text_search">Search</string>
+    <string name="text_choose_blood_group">Choose Blood Group</string>
+    <!--<string name="something_went_wrong">Something went wrong</string>-->
+
+</resources>

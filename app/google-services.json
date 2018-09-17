@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "422383523450",
+    "firebase_url": "https://community-7f903.firebaseio.com",
+    "project_id": "community-7f903",
+    "storage_bucket": "community-7f903.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422383523450:android:48781d419b7b8ab9",
+        "android_client_info": {
+          "package_name": "virtuzo.abhishek.community"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422383523450-3m761t9qvhhcl4495f8p90d5djvgofl0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "virtuzo.abhishek.community",
+            "certificate_hash": "b1b49332d5ac8a28b88d746cc4333e62239ec1e0"
+          }
+        },
+        {
+          "client_id": "422383523450-8r0173uu7bosin9gu7cbf1go26lm8ntg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN45zSrF5Q7Mn5abM6kuWZ1k5cbq-SyGo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422383523450-8r0173uu7bosin9gu7cbf1go26lm8ntg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="virtuzo.abhishek.community.activity.ProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:stateListAnimator="@transition/appbar_always_elevated">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/profile_field_margin">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/mobile_phone"
+                    android:layout_margin="10dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+
+                    <EditText
+                        android:id="@+id/mobileNoEditText"
+                        android:padding="10dp"
+                        android:enabled="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/profile_mobileno"
+
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/profile_field_margin">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/name"
+                    android:layout_margin="10dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:padding="10dp"
+                        android:id="@+id/nameEditText"
+                        android:enabled="false"
+                        android:hint="@string/profile_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/profile_field_margin">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/dob"
+                    android:layout_margin="10dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:padding="10dp"
+                        android:onClick="onDobClick"
+                        android:focusable="false"
+                        android:enabled="true"
+                        android:id="@+id/dobEditText"
+                        android:hint="@string/profile_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/profile_field_margin">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/address_black"
+                    android:layout_margin="10dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:padding="10dp"
+                        android:id="@+id/addressEditText"
+                        android:hint="@string/profile_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/profile_field_margin">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/profession"
+                    android:layout_margin="10dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+
+                    <EditText
+                        android:padding="10dp"
+                        android:id="@+id/professionEditText"
+                        android:hint="@string/profile_profession"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/profile_field_margin">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/about"
+                    android:layout_margin="10dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+
+                    <EditText
+                        android:padding="10dp"
+                        android:id="@+id/aboutMeEditText"
+                        android:hint="@string/profile_about_you"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/profile_field_margin">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/blood_donation"
+                    android:layout_margin="10dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+
+                <RelativeLayout
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Switch
+                        android:id="@+id/bloodDonationSwitch"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/interested_in_blood_donation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_margin="10dp"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+
+                    <EditText
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bloodGroupLayout"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/profile_field_margin">
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/blood_donation"
+                    android:layout_margin="10dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/blood_group"
+                        android:layout_margin="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Spinner
+                        android:background="@drawable/spinner_border"
+                        android:id="@+id/bloodGroupSpinner"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:background="@color/colorAccent"
+                android:text="@string/button_save"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
