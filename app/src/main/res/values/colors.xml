@@ -28,4 +28,7 @@
 
     <color name="app_theme_color">#0000fe</color>
 
+    <color name="toolbar_bg_color">#3498db</color>
+    <color name="toolbar_text_color">#ffffff</color>
+
 </resources>

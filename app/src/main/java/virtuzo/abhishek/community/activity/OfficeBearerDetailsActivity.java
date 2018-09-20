@@ -58,6 +58,8 @@ public class OfficeBearerDetailsActivity extends LangSupportBaseActivity {
         emailLayout = (LinearLayout) findViewById(R.id.emailLayout);
         mobileLayout = (LinearLayout) findViewById(R.id.mobileLayout);
 
+        profileImage.setImageResource(R.drawable.ic_userblank);
+
         bundle = getIntent().getExtras();
 //        String officeBearerString = bundle.getString("OfficeBearer", "");
 //        Gson gson = new Gson();

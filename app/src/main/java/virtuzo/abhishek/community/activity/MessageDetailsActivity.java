@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
+import com.github.chrisbanes.photoview.PhotoView;
 import com.google.gson.Gson;
 
 import virtuzo.abhishek.community.R;
@@ -27,7 +28,8 @@ public class MessageDetailsActivity extends LangSupportBaseActivity {
     Message message;
 
     Toolbar toolbar;
-    ImageView imageView;
+//    ImageView imageView;
+    PhotoView photoView;
     ProgressBar imageProgressBar;
 
     @Override
@@ -39,7 +41,8 @@ public class MessageDetailsActivity extends LangSupportBaseActivity {
     }
 
     private void initActivity() {
-        imageView = (ImageView) findViewById(R.id.imageView);
+//        imageView = (ImageView) findViewById(R.id.imageView);
+        photoView = (PhotoView) findViewById(R.id.photoView);
         imageProgressBar = findViewById(R.id.imageProgressBar);
 
         bundle = getIntent().getExtras();
@@ -74,7 +77,7 @@ public class MessageDetailsActivity extends LangSupportBaseActivity {
                 imageProgressBar.setVisibility(View.GONE);
                 return false;
             }
-        }).into(imageView);
+        }).into(photoView);
     }
 
     @Override

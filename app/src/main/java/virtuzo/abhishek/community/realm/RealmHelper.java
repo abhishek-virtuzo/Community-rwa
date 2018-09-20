@@ -31,6 +31,13 @@ public class RealmHelper {
         return instance;
     }
 
+    public ArrayList<ContactCategory> getContactCategories() {
+        ArrayList<ContactCategory> contactCategories;
+        RealmResults<ContactCategory> contactCategoriesRealm = AppController.realm.where(ContactCategory.class).findAll();
+        contactCategories = (ArrayList<ContactCategory>) AppController.realm.copyFromRealm(contactCategoriesRealm);
+        return contactCategories;
+    }
+
     public ArrayList<ContactCategory> getContactCategories(int ID) {
         ArrayList<ContactCategory> contactCategories;
         RealmResults<ContactCategory> contactCategoriesRealm = AppController.realm.where(ContactCategory.class).equalTo("ParentID", ID).findAll();

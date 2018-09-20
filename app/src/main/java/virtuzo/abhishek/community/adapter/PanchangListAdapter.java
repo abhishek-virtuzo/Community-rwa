@@ -13,6 +13,8 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
+import com.github.chrisbanes.photoview.PhotoView;
+
 import virtuzo.abhishek.community.R;
 
 import java.util.ArrayList;
@@ -62,7 +64,7 @@ public class PanchangListAdapter extends RecyclerView.Adapter<PanchangListAdapte
                 holder.progressBar.setVisibility(View.GONE);
                 return false;
             }
-        }).into(holder.imageView);
+        }).into(holder.photoView);
 
     }
 
@@ -78,7 +80,8 @@ public class PanchangListAdapter extends RecyclerView.Adapter<PanchangListAdapte
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
 //        public TextView titleTextView;
-        public ImageView imageView;
+//        public ImageView imageView;
+        public PhotoView photoView;
         ProgressBar progressBar;
 
         public View myView;
@@ -87,7 +90,8 @@ public class PanchangListAdapter extends RecyclerView.Adapter<PanchangListAdapte
             super(itemView);
 
 //            titleTextView = (TextView) itemView.findViewById(R.id.titleTextView);
-            imageView = (ImageView) itemView.findViewById(R.id.imageView);
+//            imageView = (ImageView) itemView.findViewById(R.id.imageView);
+            photoView = (PhotoView) itemView.findViewById(R.id.photoView);
             progressBar = (ProgressBar) itemView.findViewById(R.id.loadingProgressBar);
 
             myView = itemView;

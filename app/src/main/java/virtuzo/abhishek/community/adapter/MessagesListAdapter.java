@@ -1,7 +1,9 @@
 package virtuzo.abhishek.community.adapter;
 
 import android.content.Context;
+import android.os.Handler;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,7 @@ import java.util.List;
 
 import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.model.Message;
+import virtuzo.abhishek.community.utils.AnimationUtils;
 
 /**
  * Created by Abhishek Aggarwal on 4/25/2018.
@@ -22,6 +25,8 @@ public class MessagesListAdapter extends RecyclerView.Adapter<MessagesListAdapte
     private List<Message> messages;
     private MessagesListAdapter.OnClickListener listener;
     Context context;
+
+    boolean isFirstTime = true;
 
     public MessagesListAdapter(ArrayList<Message> stateList, Context context, MessagesListAdapter.OnClickListener onClickListener) {
         this.messages = stateList;
@@ -44,6 +49,22 @@ public class MessagesListAdapter extends RecyclerView.Adapter<MessagesListAdapte
 
         holder.bind(message);
         holder.textView.setText(message.getName());
+
+        // for animation
+        if (isFirstTime) {
+            Log.e("First Time", position + "");
+            holder.itemView.setVisibility(View.GONE);
+            Handler handler = new android.os.Handler();
+            Runnable runnable = new Runnable() {
+                @Override
+                public void run() {
+                    isFirstTime = false;
+                    holder.itemView.setVisibility(View.VISIBLE);
+                    AnimationUtils.animate(holder);
+                }
+            };
+            handler.postDelayed(runnable, (position + 1) * AnimationUtils.DELAY_TIME);
+        }
 
     }
 

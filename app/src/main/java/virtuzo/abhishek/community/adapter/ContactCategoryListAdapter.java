@@ -2,6 +2,7 @@ package virtuzo.abhishek.community.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,9 +10,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import android.os.Handler;
 
 import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.model.ContactCategory;
+import virtuzo.abhishek.community.utils.AnimationUtils;
 
 /**
  * Created by Abhishek Aggarwal on 4/25/2018.
@@ -22,6 +25,8 @@ public class ContactCategoryListAdapter extends RecyclerView.Adapter<ContactCate
     private List<ContactCategory> contactCategories;
     private ContactCategoryListAdapter.OnClickListener listener;
     Context context;
+
+    boolean isFirstTime = true;
 
     public ContactCategoryListAdapter(ArrayList<ContactCategory> stateList, Context context, ContactCategoryListAdapter.OnClickListener onClickListener) {
         this.contactCategories = stateList;
@@ -43,7 +48,23 @@ public class ContactCategoryListAdapter extends RecyclerView.Adapter<ContactCate
         ContactCategory contactCategory = contactCategories.get(position);
 
         holder.bind(contactCategory);
-        holder.textView.setText(contactCategory.getCategoryName());
+        holder.textView.setText("> " + contactCategory.getCategoryName());
+
+        // for animation - comment the below code to stop animation
+        if (isFirstTime) {
+            Log.e("First Time", position+"");
+            holder.itemView.setVisibility(View.GONE);
+            Handler handler = new android.os.Handler();
+            Runnable runnable = new Runnable() {
+                @Override
+                public void run() {
+                    isFirstTime = false;
+                    holder.itemView.setVisibility(View.VISIBLE);
+                    AnimationUtils.animate(holder);
+                }
+            };
+            handler.postDelayed(runnable, (position + 1) * AnimationUtils.DELAY_TIME);
+        }
 
     }
 

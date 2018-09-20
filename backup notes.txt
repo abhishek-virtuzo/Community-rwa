@@ -237,3 +237,15 @@ Choose blood group (in hindi)
 04-09-2018
 Changed app logo, splash screen and logo in login screens
 Null checks in RealmHelper file
+
+17-09-2018
+Change in panchang layout (swipe left right)
+Messages - Zoom in/out
+Panchang - Zoom in/out
+Added Office Bearers details in web
+
+19-09-2018
+Change in layout for Category list and Message list
+
+20-09-2018
+Wave Animation for Category list
