@@ -18,6 +18,7 @@ import virtuzo.abhishek.community.adapter.ResidentBlockListAdapter;
 import virtuzo.abhishek.community.model.ContactCategory;
 import virtuzo.abhishek.community.model.ResidentBlock;
 import virtuzo.abhishek.community.realm.RealmHelper;
+import virtuzo.abhishek.community.utils.MyFunctions;
 
 public class ResidentBlockListActivity extends LangSupportBaseActivity {
 
@@ -39,6 +40,7 @@ public class ResidentBlockListActivity extends LangSupportBaseActivity {
         initToolbar();
         loadActivity();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void loadActivity() {

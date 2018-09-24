@@ -31,4 +31,7 @@
     <color name="toolbar_bg_color">#3498db</color>
     <color name="toolbar_text_color">#ffffff</color>
 
+    <color name="status_bar_color">#2980b9</color>
+    <color name="nav_bar_color">#2980b9</color>
+
 </resources>

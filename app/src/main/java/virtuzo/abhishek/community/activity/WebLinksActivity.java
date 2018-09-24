@@ -19,6 +19,7 @@ import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.adapter.PaymentLinkListAdapter;
 import virtuzo.abhishek.community.model.PaymentLink;
 import virtuzo.abhishek.community.realm.RealmHelper;
+import virtuzo.abhishek.community.utils.MyFunctions;
 
 public class WebLinksActivity extends AppCompatActivity {
 
@@ -34,6 +35,8 @@ public class WebLinksActivity extends AppCompatActivity {
 
         initToolbar();
         initActivity();
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void initActivity() {
@@ -72,6 +75,9 @@ public class WebLinksActivity extends AppCompatActivity {
 //        paymentLink4.setImageUrl("http://sirrat.com/community/eventimage/b2.jpg");
 //        paymentLinkArrayList.add(paymentLink4);
 
+        paymentLinkArrayList.addAll(RealmHelper.getInstance().getPaymentLinks());
+        paymentLinkArrayList.addAll(RealmHelper.getInstance().getPaymentLinks());
+        paymentLinkArrayList.addAll(RealmHelper.getInstance().getPaymentLinks());
         paymentLinkArrayList.addAll(RealmHelper.getInstance().getPaymentLinks());
 
         paymentLinkListAdapter.notifyDataSetChanged();

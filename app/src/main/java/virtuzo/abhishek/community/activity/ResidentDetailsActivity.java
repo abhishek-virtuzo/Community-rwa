@@ -55,6 +55,7 @@ public class ResidentDetailsActivity extends LangSupportBaseActivity {
             initContent();
         }
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void initContent() {

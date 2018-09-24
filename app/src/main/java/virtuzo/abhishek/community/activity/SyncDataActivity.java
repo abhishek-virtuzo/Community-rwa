@@ -30,6 +30,7 @@ import virtuzo.abhishek.community.model.PaymentLink;
 import virtuzo.abhishek.community.model.Resident;
 import virtuzo.abhishek.community.model.ResidentBlock;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 
 import virtuzo.abhishek.community.config.UrlConfig;
@@ -51,6 +52,8 @@ public class SyncDataActivity extends LangSupportBaseActivity implements Network
         progressDialog.show();
         progressDialog.setMessage("Please wait, this may take a while");
         startSyncing();
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void startSyncing() {

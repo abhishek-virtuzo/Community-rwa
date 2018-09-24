@@ -65,6 +65,8 @@ public class NewComplaintActivity extends LangSupportBaseActivity implements Net
 
         initToolbar();
         initGUI();
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void initGUI() {

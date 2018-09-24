@@ -21,6 +21,7 @@ import org.apache.commons.lang3.StringEscapeUtils;
 import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Permission;
 
 public class AboutUsActivity extends LangSupportBaseActivity implements View.OnClickListener {
@@ -81,6 +82,8 @@ public class AboutUsActivity extends LangSupportBaseActivity implements View.OnC
         rateButtonView.setOnClickListener(this);
 
         initAdmobBanner();
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
+
     }
 
     @Override

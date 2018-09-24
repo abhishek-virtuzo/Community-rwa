@@ -50,7 +50,7 @@ public class MessagesListAdapter extends RecyclerView.Adapter<MessagesListAdapte
         holder.bind(message);
         holder.textView.setText(message.getName());
 
-        // for animation
+        // for animation - comment the below code to stop animation
         if (isFirstTime) {
             Log.e("First Time", position + "");
             holder.itemView.setVisibility(View.GONE);
@@ -60,7 +60,7 @@ public class MessagesListAdapter extends RecyclerView.Adapter<MessagesListAdapte
                 public void run() {
                     isFirstTime = false;
                     holder.itemView.setVisibility(View.VISIBLE);
-                    AnimationUtils.animate(holder);
+                    AnimationUtils.animateListWave(holder);
                 }
             };
             handler.postDelayed(runnable, (position + 1) * AnimationUtils.DELAY_TIME);

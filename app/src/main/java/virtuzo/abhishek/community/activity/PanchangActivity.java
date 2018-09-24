@@ -32,6 +32,7 @@ import virtuzo.abhishek.community.adapter.PanchangListAdapter;
 import virtuzo.abhishek.community.config.UrlConfig;
 import virtuzo.abhishek.community.realm.RealmHelper;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 
 public class PanchangActivity extends LangSupportBaseActivity implements Network.Listener, PanchangListAdapter.OnClickListener {
@@ -64,6 +65,8 @@ public class PanchangActivity extends LangSupportBaseActivity implements Network
         initToolbar();
 //        loadContent();
         loadDataFromRealm();
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void loadDataFromRealm() {

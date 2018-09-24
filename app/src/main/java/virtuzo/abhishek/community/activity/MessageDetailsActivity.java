@@ -20,6 +20,7 @@ import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.model.Message;
 import virtuzo.abhishek.community.model.OfficeBearer;
 import virtuzo.abhishek.community.realm.RealmHelper;
+import virtuzo.abhishek.community.utils.MyFunctions;
 
 public class MessageDetailsActivity extends LangSupportBaseActivity {
 
@@ -38,6 +39,8 @@ public class MessageDetailsActivity extends LangSupportBaseActivity {
         setContentView(R.layout.activity_message_details);
 
         initActivity();
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void initActivity() {

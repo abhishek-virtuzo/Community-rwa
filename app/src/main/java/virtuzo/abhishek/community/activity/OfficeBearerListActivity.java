@@ -33,6 +33,7 @@ import virtuzo.abhishek.community.model.Resident;
 import virtuzo.abhishek.community.realm.RealmHelper;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 
 public class OfficeBearerListActivity extends LangSupportBaseActivity implements Network.Listener, SearchView.OnQueryTextListener {
@@ -56,6 +57,7 @@ public class OfficeBearerListActivity extends LangSupportBaseActivity implements
         initToolbar();
         loadActivity();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void loadActivity() {

@@ -48,7 +48,7 @@ public class ContactCategoryListAdapter extends RecyclerView.Adapter<ContactCate
         ContactCategory contactCategory = contactCategories.get(position);
 
         holder.bind(contactCategory);
-        holder.textView.setText("> " + contactCategory.getCategoryName());
+        holder.textView.setText(contactCategory.getCategoryName());
 
         // for animation - comment the below code to stop animation
         if (isFirstTime) {
@@ -60,7 +60,7 @@ public class ContactCategoryListAdapter extends RecyclerView.Adapter<ContactCate
                 public void run() {
                     isFirstTime = false;
                     holder.itemView.setVisibility(View.VISIBLE);
-                    AnimationUtils.animate(holder);
+                    AnimationUtils.animateListWave(holder);
                 }
             };
             handler.postDelayed(runnable, (position + 1) * AnimationUtils.DELAY_TIME);

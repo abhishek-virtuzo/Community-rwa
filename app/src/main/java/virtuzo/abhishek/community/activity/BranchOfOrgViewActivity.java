@@ -32,6 +32,7 @@ import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.adapter.BranchOfOrganisation;
 import virtuzo.abhishek.community.adapter.Event;
 import virtuzo.abhishek.community.config.UrlConfig;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 
 public class BranchOfOrgViewActivity extends LangSupportBaseActivity implements Network.Listener, View.OnClickListener {
@@ -88,6 +89,7 @@ public class BranchOfOrgViewActivity extends LangSupportBaseActivity implements 
 
         loadContent();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
 //    private void initToolbar() {

@@ -28,6 +28,7 @@ import virtuzo.abhishek.community.custom.EndlessRecyclerOnScrollListener;
 import virtuzo.abhishek.community.db.DbHandler;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 import virtuzo.abhishek.community.utils.Permission;
 
@@ -195,6 +196,8 @@ public class AudioPostActivity extends LangSupportBaseActivity implements AudioP
         initToolbar();
         initRecyclerView();
         initAdmobBanner();
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private AudioPostAdapter.ViewHolder shareHolder;

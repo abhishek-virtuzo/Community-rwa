@@ -68,6 +68,8 @@ public class HelpActivity extends LangSupportBaseActivity {
 
         initToolbar();
         initGUI();
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void initGUI() {

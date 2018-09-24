@@ -71,6 +71,7 @@ public class CircularViewActivity extends LangSupportBaseActivity implements Net
 
 //        initContent();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void getContent() {

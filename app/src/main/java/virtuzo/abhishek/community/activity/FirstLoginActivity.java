@@ -28,6 +28,7 @@ import virtuzo.abhishek.community.AppUtils;
 import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.config.UrlConfig;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 import virtuzo.abhishek.community.utils.Permission;
 import virtuzo.abhishek.community.utils.Valid;
@@ -83,6 +84,7 @@ public class FirstLoginActivity extends LangSupportBaseActivity implements Netwo
 //        initToolbar();
         initAdmobBanner();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     @Override

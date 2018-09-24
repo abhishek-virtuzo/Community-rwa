@@ -93,5 +93,9 @@
         <item name="android:background">@android:color/transparent</item>
     </style>
 
+    <style name="toolbarTheme"  parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/toolbar_text_color</item>
+        <item name="android:background">@color/toolbar_bg_color</item>
+    </style>
 
 </resources>

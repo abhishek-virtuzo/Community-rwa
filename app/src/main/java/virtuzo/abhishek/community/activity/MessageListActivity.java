@@ -28,6 +28,7 @@ import virtuzo.abhishek.community.model.Message;
 import virtuzo.abhishek.community.realm.RealmHelper;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 
 public class MessageListActivity extends LangSupportBaseActivity implements Network.Listener {
@@ -50,6 +51,7 @@ public class MessageListActivity extends LangSupportBaseActivity implements Netw
         initToolbar();
         loadActivity();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void loadActivity() {

@@ -12,6 +12,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import virtuzo.abhishek.community.AppUtils;
 import virtuzo.abhishek.community.R;
+import virtuzo.abhishek.community.utils.MyFunctions;
 
 public class SetupEmergencyMessageActivity extends LangSupportBaseActivity {
 
@@ -26,6 +27,7 @@ public class SetupEmergencyMessageActivity extends LangSupportBaseActivity {
         initToolbar();
         initGUI();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void initGUI() {

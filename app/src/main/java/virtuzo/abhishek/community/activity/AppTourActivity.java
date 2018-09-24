@@ -18,6 +18,7 @@ import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.TourFragment;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 
 public class AppTourActivity extends AppIntro {
 
@@ -82,6 +83,8 @@ public class AppTourActivity extends AppIntro {
 
         setSkipText(getResources().getString(R.string.skip));
         setDoneText(getResources().getString(R.string.done));
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     @Override

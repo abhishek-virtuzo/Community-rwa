@@ -34,6 +34,7 @@ import virtuzo.abhishek.community.config.UrlConfig;
 import virtuzo.abhishek.community.custom.Tasks;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 import virtuzo.abhishek.community.utils.Permission;
 import virtuzo.abhishek.community.utils.network.Multipart;
@@ -144,6 +145,8 @@ public class CommentActivity extends LangSupportBaseActivity implements View.OnC
         initToolbar();
         initRecyclerView();
         initAdmobBanner();
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void openGallery() {

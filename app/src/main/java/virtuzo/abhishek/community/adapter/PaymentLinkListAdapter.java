@@ -1,7 +1,9 @@
 package virtuzo.abhishek.community.adapter;
 
 import android.content.Context;
+import android.os.Handler;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +17,7 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.model.PaymentLink;
+import virtuzo.abhishek.community.utils.AnimationUtils;
 import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.SquareImageView;
 
@@ -27,6 +30,8 @@ public class PaymentLinkListAdapter extends RecyclerView.Adapter<PaymentLinkList
     private List<PaymentLink> paymentLinkList;
     private PaymentLinkListAdapter.OnClickListener listener;
     Context context;
+
+    boolean isFirstTime = true;
 
     public PaymentLinkListAdapter(ArrayList<PaymentLink> stateList, Context context, PaymentLinkListAdapter.OnClickListener onClickListener) {
         this.paymentLinkList = stateList;
@@ -49,6 +54,24 @@ public class PaymentLinkListAdapter extends RecyclerView.Adapter<PaymentLinkList
 
         holder.bind(paymentLink);
         Glide.with(context).load(paymentLink.getImageUrl()).placeholder(R.drawable.image_background).dontAnimate().into(holder.squareImageView);
+
+        // for animation - comment the below code to stop animation
+        if (isFirstTime) {
+            Log.e("First Time", position+"");
+            holder.itemView.setVisibility(View.GONE);
+            Handler handler = new android.os.Handler();
+            Runnable runnable = new Runnable() {
+                @Override
+                public void run() {
+                    isFirstTime = false;
+                    holder.itemView.setVisibility(View.VISIBLE);
+                    AnimationUtils.animateImageVisible(holder);
+                }
+            };
+            int multiplier = position/2; // as two items in one line (making animation same for item in one line)
+            multiplier *= 4;
+            handler.postDelayed(runnable, AnimationUtils.DELAY_TIME * (multiplier + 1));
+        }
 
     }
 

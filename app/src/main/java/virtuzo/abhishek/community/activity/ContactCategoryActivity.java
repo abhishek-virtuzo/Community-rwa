@@ -29,6 +29,7 @@ import virtuzo.abhishek.community.model.ContactCategory;
 import virtuzo.abhishek.community.realm.RealmHelper;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 
 public class ContactCategoryActivity extends LangSupportBaseActivity implements Network.Listener {
@@ -57,6 +58,7 @@ public class ContactCategoryActivity extends LangSupportBaseActivity implements 
         initToolbar();
         loadActivity();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void loadActivity() {

@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.fragment.ImageViewPagerFragment;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,6 +58,8 @@ public class PostImagesActivity extends FragmentActivity implements View.OnClick
         viewPager.setOffscreenPageLimit(imageList.size());
         viewPager.setOnPageChangeListener(this);
         viewPager.setAdapter(viewPagerAdapter);
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
 

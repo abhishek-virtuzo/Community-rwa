@@ -26,6 +26,7 @@ import virtuzo.abhishek.community.adapter.Event;
 import virtuzo.abhishek.community.config.UrlConfig;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 
 import java.util.ArrayList;
@@ -51,6 +52,7 @@ public class BranchesOfOrganisationActivity extends LangSupportBaseActivity impl
         initToolbar();
         loadActivity();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void loadActivity() {

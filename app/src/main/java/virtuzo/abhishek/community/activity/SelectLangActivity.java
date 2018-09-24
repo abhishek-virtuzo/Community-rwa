@@ -19,6 +19,7 @@ import virtuzo.abhishek.community.adapter.LangAdapter;
 import virtuzo.abhishek.community.adapter.LangItem;
 import virtuzo.abhishek.community.config.UrlConfig;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 
 import org.json.JSONArray;
@@ -98,6 +99,8 @@ public class SelectLangActivity extends LangSupportBaseActivity implements LangA
         isChangeLanguage = getIntent().getBooleanExtra("ChangeLanguage", false);
         lang = new Lang(this, this);
         loadActivity();
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     @Override

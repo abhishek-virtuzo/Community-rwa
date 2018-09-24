@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 
 import virtuzo.abhishek.community.R;
+import virtuzo.abhishek.community.utils.MyFunctions;
 
 public class ComingSoonActivity extends LangSupportBaseActivity {
 
@@ -21,6 +22,7 @@ public class ComingSoonActivity extends LangSupportBaseActivity {
 //        imageView.setClipToOutline(true);
 
         initToolbar();
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
 

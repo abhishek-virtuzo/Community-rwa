@@ -245,6 +245,8 @@ public class SplashActivity extends AppCompatActivity {
         ;
         handler = new Handler();
         handler.postDelayed(runnable, 2 * 1000);
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void showEvent(String id) {

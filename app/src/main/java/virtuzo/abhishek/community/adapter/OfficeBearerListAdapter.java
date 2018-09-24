@@ -1,7 +1,9 @@
 package virtuzo.abhishek.community.adapter;
 
 import android.content.Context;
+import android.os.Handler;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +17,7 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.model.OfficeBearer;
+import virtuzo.abhishek.community.utils.AnimationUtils;
 
 /**
  * Created by Abhishek Aggarwal on 4/25/2018.
@@ -25,6 +28,8 @@ public class OfficeBearerListAdapter extends RecyclerView.Adapter<OfficeBearerLi
     private List<OfficeBearer> officeBearerList;
     private OfficeBearerListAdapter.OnClickListener listener;
     Context context;
+
+    boolean isFirstTime = true;
 
     public OfficeBearerListAdapter(ArrayList<OfficeBearer> stateList, Context context, OfficeBearerListAdapter.OnClickListener onClickListener) {
         this.officeBearerList = stateList;
@@ -49,6 +54,22 @@ public class OfficeBearerListAdapter extends RecyclerView.Adapter<OfficeBearerLi
         holder.nameTextView.setText(officeBearer.getName());
         holder.designationTextView.setText(officeBearer.getDesignation());
         Glide.with(context).load(officeBearer.getProfileUrl()).placeholder(R.drawable.ic_userblank).dontAnimate().into(holder.profileImage);
+
+        // for animation - comment the below code to stop animation
+        if (isFirstTime) {
+            Log.e("First Time", position + "");
+            holder.itemView.setVisibility(View.GONE);
+            Handler handler = new android.os.Handler();
+            Runnable runnable = new Runnable() {
+                @Override
+                public void run() {
+                    isFirstTime = false;
+                    holder.itemView.setVisibility(View.VISIBLE);
+                    AnimationUtils.animateListWave(holder);
+                }
+            };
+            handler.postDelayed(runnable, (position + 1) * AnimationUtils.DELAY_TIME);
+        }
 
     }
 

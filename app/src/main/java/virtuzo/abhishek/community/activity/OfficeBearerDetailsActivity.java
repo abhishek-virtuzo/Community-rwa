@@ -42,6 +42,7 @@ public class OfficeBearerDetailsActivity extends LangSupportBaseActivity {
 
         initActivity();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void initActivity() {

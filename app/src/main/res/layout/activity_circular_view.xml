@@ -19,23 +19,24 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary" >
+            android:theme="@style/toolbarTheme"
+            android:layout_height="?attr/actionBarSize" >
 
             <RelativeLayout
+                android:background="@color/toolbar_bg_color"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TextView
                     android:gravity="center_vertical"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="24sp"
                     android:text="@string/text_menu_circular"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent" />
 
                 <ImageView
-                    android:src="@drawable/share"
+                    android:src="@drawable/share_white"
                     android:onClick="onShareClick"
                     android:padding="16dp"
                     android:layout_alignParentRight="true"

@@ -61,6 +61,7 @@ import virtuzo.abhishek.community.fragment.MainPostFragment;
 import virtuzo.abhishek.community.fragment.PrarangFragment;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 import virtuzo.abhishek.community.utils.Permission;
 import virtuzo.abhishek.community.utils.network.Multipart;
@@ -88,10 +89,10 @@ public class HomeActivity extends LangSupportBaseActivity implements View.OnClic
     private List<NavItem> menuList = new ArrayList<>();
     private LinearLayout spinnerLayout;
     private int[] tabIcons = {
-            R.drawable.ic_tab_home,
-            R.drawable.ic_tab_event_list,
-            R.drawable.ic_tab_bookmark,
-            R.drawable.ic_tab_circular
+            R.drawable.ic_tab_home_white,
+            R.drawable.ic_tab_event_list_white,
+            R.drawable.ic_tab_bookmark_white,
+            R.drawable.ic_tab_circular_white
     };
 
     private SelectGeoDialog selectGeoDialog;
@@ -295,6 +296,7 @@ public class HomeActivity extends LangSupportBaseActivity implements View.OnClic
                 onLocationChanged(location);
             }
         }
+
         // Obtain the Firebase Analytics instance.
         firebaseAnalytics = FirebaseAnalytics.getInstance(this);
         Bundle bundle = new Bundle();
@@ -304,6 +306,9 @@ public class HomeActivity extends LangSupportBaseActivity implements View.OnClic
             bundle.putString("location", appUtils.getSavedLocation());
         }
         firebaseAnalytics.logEvent("PRARANG", bundle);
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
+
     }
 
     @Override

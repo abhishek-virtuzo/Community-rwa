@@ -24,6 +24,7 @@ import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.adapter.ContactListAdapter;
 import virtuzo.abhishek.community.model.Contact;
 import virtuzo.abhishek.community.realm.RealmHelper;
+import virtuzo.abhishek.community.utils.MyFunctions;
 
 public class ContactListActivity extends LangSupportBaseActivity {
 
@@ -42,6 +43,7 @@ public class ContactListActivity extends LangSupportBaseActivity {
         initToolbar();
         loadActivity();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void initToolbar() {

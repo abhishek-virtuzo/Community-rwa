@@ -61,6 +61,8 @@ public class ComplaintListActivity extends LangSupportBaseActivity implements Ne
 
         initToolbar();
         initActivity();
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void initActivity() {

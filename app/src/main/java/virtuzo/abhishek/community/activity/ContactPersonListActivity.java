@@ -31,6 +31,7 @@ import virtuzo.abhishek.community.model.OfficeBearer;
 import virtuzo.abhishek.community.realm.RealmHelper;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 
 public class ContactPersonListActivity extends LangSupportBaseActivity implements Network.Listener, SearchView.OnQueryTextListener {
@@ -60,6 +61,7 @@ public class ContactPersonListActivity extends LangSupportBaseActivity implement
         initToolbar();
         loadActivity();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void loadActivity() {

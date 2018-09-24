@@ -29,6 +29,5 @@
         android:scrollHorizontally="true"
         android:focusable="true"
         android:focusableInTouchMode="true"
-
-        android:textColor="#000000" />
+        android:textColor="@color/toolbar_text_color" />
 </LinearLayout>

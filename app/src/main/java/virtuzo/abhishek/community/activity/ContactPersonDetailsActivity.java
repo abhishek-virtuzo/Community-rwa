@@ -58,6 +58,8 @@ public class ContactPersonDetailsActivity extends LangSupportBaseActivity implem
 
 //        loadData();
         loadDataFromRealm();
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void loadDataFromRealm() {

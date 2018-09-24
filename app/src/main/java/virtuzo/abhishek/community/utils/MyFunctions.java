@@ -9,6 +9,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
+import virtuzo.abhishek.community.R;
+
 /**
  * Created by virtuzo on 5/7/2018.
  */
@@ -98,6 +100,13 @@ public class MyFunctions {
     public static void toggleKeyboard(Activity activity) {
         InputMethodManager imm = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.toggleSoftInput(InputMethodManager.SHOW_IMPLICIT, 0);
+    }
+
+    public static void setStatusBarAndNavigationBarColor(Activity activity) {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+            activity.getWindow().setStatusBarColor(activity.getResources().getColor(R.color.status_bar_color));
+            activity.getWindow().setNavigationBarColor(activity.getResources().getColor(R.color.nav_bar_color));
+        }
     }
 
 }

@@ -30,6 +30,7 @@ import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.custom.ToolbarColorizeHelper;
 import virtuzo.abhishek.community.fragment.TagListFragment;
 import virtuzo.abhishek.community.utils.BaseUtils;
+import virtuzo.abhishek.community.utils.MyFunctions;
 
 public class TagListActivity extends LangSupportBaseActivity {
 
@@ -130,6 +131,8 @@ public class TagListActivity extends LangSupportBaseActivity {
         initAdmobBanner();
 
         replaceFragment(R.id.fragmentFrame, tagListFragment, false, null);
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     @Override

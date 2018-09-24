@@ -28,6 +28,7 @@ import virtuzo.abhishek.community.custom.EndlessRecyclerOnScrollListener;
 import virtuzo.abhishek.community.db.DbHandler;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 import virtuzo.abhishek.community.utils.Permission;
 
@@ -193,6 +194,8 @@ public class PostActivity extends LangSupportBaseActivity implements PostAdapter
         initToolbar();
         initRecyclerView();
         initAdmobBanner();
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private PostAdapter.ViewHolder shareHolder;

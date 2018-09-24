@@ -33,6 +33,7 @@ import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.config.UrlConfig;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 import virtuzo.abhishek.community.utils.Permission;
 import virtuzo.abhishek.community.utils.Valid;
@@ -143,6 +144,8 @@ public class LoginActivity extends LangSupportBaseActivity implements View.OnCli
                 }
             }
         };
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
 //    @Override

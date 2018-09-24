@@ -105,6 +105,8 @@ public class EventViewActivity extends LangSupportBaseActivity implements Networ
 //        progressDialog.show();
 
         loadContent();
+
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     public void loadContent() {

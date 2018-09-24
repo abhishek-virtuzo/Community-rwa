@@ -74,6 +74,7 @@ public class ProfileActivity extends LangSupportBaseActivity implements Network.
         dateInit();
         loadData();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void initActivity() {

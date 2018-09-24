@@ -25,6 +25,7 @@ import virtuzo.abhishek.community.model.ResidentBlock;
 import virtuzo.abhishek.community.realm.RealmHelper;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 import android.support.v7.widget.SearchView;
 
@@ -51,6 +52,7 @@ public class ResidentListActivity extends LangSupportBaseActivity implements Sea
         initToolbar();
         loadActivity();
 
+        MyFunctions.setStatusBarAndNavigationBarColor(this);
     }
 
     private void loadActivity() {
