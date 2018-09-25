@@ -7,19 +7,16 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import de.hdodenhof.circleimageview.CircleImageView;
 import virtuzo.abhishek.community.R;
 import virtuzo.abhishek.community.model.PaymentLink;
 import virtuzo.abhishek.community.utils.AnimationUtils;
-import virtuzo.abhishek.community.utils.MyFunctions;
-import virtuzo.abhishek.community.utils.SquareImageView;
+import virtuzo.abhishek.community.utils.HorizontalSquareImageView;
 
 /**
  * Created by Abhishek Aggarwal on 4/25/2018.
@@ -53,7 +50,7 @@ public class PaymentLinkListAdapter extends RecyclerView.Adapter<PaymentLinkList
         PaymentLink paymentLink = paymentLinkList.get(position);
 
         holder.bind(paymentLink);
-        Glide.with(context).load(paymentLink.getImageUrl()).placeholder(R.drawable.image_background).dontAnimate().into(holder.squareImageView);
+        Glide.with(context).load(paymentLink.getImageUrl()).placeholder(R.drawable.image_background).dontAnimate().into(holder.horizontalSquareImageView);
 
         // for animation - comment the below code to stop animation
         if (isFirstTime) {
@@ -86,14 +83,14 @@ public class PaymentLinkListAdapter extends RecyclerView.Adapter<PaymentLinkList
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        public SquareImageView squareImageView;
+        public HorizontalSquareImageView horizontalSquareImageView;
 
         public View myView;
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            squareImageView = (SquareImageView) itemView.findViewById(R.id.squareImageView);
+            horizontalSquareImageView = (HorizontalSquareImageView) itemView.findViewById(R.id.squareImageView);
 
             myView = itemView;
         }

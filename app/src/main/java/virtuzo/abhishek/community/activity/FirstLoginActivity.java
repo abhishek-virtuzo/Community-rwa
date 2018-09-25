@@ -82,7 +82,7 @@ public class FirstLoginActivity extends LangSupportBaseActivity implements Netwo
         timerText.setOnClickListener(this);
 
 //        initToolbar();
-        initAdmobBanner();
+//        initAdmobBanner();
 
         MyFunctions.setStatusBarAndNavigationBarColor(this);
     }

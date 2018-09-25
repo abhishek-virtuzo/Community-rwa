@@ -3,11 +3,13 @@ package virtuzo.abhishek.community.activity;
 import android.Manifest;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.telephony.SmsMessage;
@@ -102,12 +104,14 @@ public class LoginActivity extends LangSupportBaseActivity implements View.OnCli
         loginFrame = (FrameLayout) findViewById(R.id.loginFrame);
 
 //        initToolbar();
-        initAdmobBanner();
+//        initAdmobBanner();
 
         Bundle bundle = getIntent().getExtras();
-        AccessCode = bundle.getString("AccessCode");
-        Toast.makeText(this, R.string.access_code_validated, Toast.LENGTH_SHORT).show();
-        AppUtils.getInstance(this).setAccessCode(AccessCode);
+        if (bundle != null) {
+            AccessCode = bundle.getString("AccessCode", "");
+            Toast.makeText(this, R.string.access_code_validated, Toast.LENGTH_SHORT).show();
+            AppUtils.getInstance(this).setAccessCode(AccessCode);
+        }
 
         submit.setOnClickListener(this);
         submitOTP.setOnClickListener(this);
@@ -260,7 +264,7 @@ public class LoginActivity extends LangSupportBaseActivity implements View.OnCli
             otpFrame.setVisibility(View.GONE);
             countDownTimer.cancel();
         } else {
-            super.onBackPressed();
+//            super.onBackPressed();
         }
     }
 
@@ -311,4 +315,22 @@ public class LoginActivity extends LangSupportBaseActivity implements View.OnCli
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         onClickSubmitButton();
     }
+
+    public void onTnC_Click(View view) {
+        popupMessage(getString(R.string.text_terms_and_conditions), getString(R.string.terms_and_conditions_details));
+    }
+
+    public void popupMessage(String title, String message) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(title)
+                .setMessage(message)
+                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                })
+                .show();
+
+    }
+
 }

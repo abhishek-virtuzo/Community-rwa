@@ -126,17 +126,7 @@ public class ContactPersonDetailsActivity extends LangSupportBaseActivity implem
     }
 
     private void initContent(final ContactPerson contactPerson) {
-        Glide.with(this).load(contactPerson.getProfileUrl()).crossFade().thumbnail(1f).listener(new RequestListener<String, GlideDrawable>() {
-            @Override
-            public boolean onException(Exception e, String model, Target<GlideDrawable> target, boolean isFirstResource) {
-                return false;
-            }
-
-            @Override
-            public boolean onResourceReady(GlideDrawable resource, String model, Target<GlideDrawable> target, boolean isFromMemoryCache, boolean isFirstResource) {
-                return false;
-            }
-        }).into(profileImage);
+        Glide.with(this).load(contactPerson.getProfileUrl()).placeholder(R.drawable.ic_userblank).dontAnimate().into(profileImage);
 
         nameTextView.setText(contactPerson.getContactName());
         if (MyFunctions.StringLength(contactPerson.getDesignation()) != 0) {

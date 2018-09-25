@@ -76,9 +76,6 @@ public class WebLinksActivity extends AppCompatActivity {
 //        paymentLinkArrayList.add(paymentLink4);
 
         paymentLinkArrayList.addAll(RealmHelper.getInstance().getPaymentLinks());
-        paymentLinkArrayList.addAll(RealmHelper.getInstance().getPaymentLinks());
-        paymentLinkArrayList.addAll(RealmHelper.getInstance().getPaymentLinks());
-        paymentLinkArrayList.addAll(RealmHelper.getInstance().getPaymentLinks());
 
         paymentLinkListAdapter.notifyDataSetChanged();
     }

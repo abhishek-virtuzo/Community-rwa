@@ -3,9 +3,10 @@ package virtuzo.abhishek.community.utils;
 import android.content.Context;
 import android.util.AttributeSet;
 
-public class SquareImageView  extends android.support.v7.widget.AppCompatImageView {
+// Square is adjusted with respect to width
+public class HorizontalSquareImageView extends android.support.v7.widget.AppCompatImageView {
 
-    public SquareImageView(Context context, AttributeSet attrs) {
+    public HorizontalSquareImageView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 

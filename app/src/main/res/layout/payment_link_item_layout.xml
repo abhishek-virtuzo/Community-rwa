@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <virtuzo.abhishek.community.utils.SquareImageView
+        <virtuzo.abhishek.community.utils.HorizontalSquareImageView
             android:scaleType="fitXY"
             android:id="@+id/squareImageView"
             android:layout_width="match_parent"

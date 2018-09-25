@@ -249,3 +249,7 @@ Change in layout for Category list and Message list
 
 20-09-2018
 Wave Animation for Category list
+
+24-09-2018
+NavigationBar and StatusBar color change
+Animation in Residents, PaymentLinks, Office bearers and contact people

@@ -132,8 +132,8 @@
     <string name="msg_uniquegeo">Please select a unique geography region</string>
     <string name="msg_networkerror">Not connected to Internet. Saved “Letters” are available in the “Bank”</string>
     <string name="msg_nointernet">Please check your internet connection.</string>
-    <string name="msg_nochitti">Please save letters in the bank</string>
-    <string name="msg_savebank">Saved</string>
+    <string name="msg_nochitti">No Bookmarks</string>
+    <string name="msg_savebank">Saved in Bookmarks</string>
 
     <string name="sharetext_aboutus">Fill your life with the colour of Culture and nature, press the below link to download Prarang App.</string>
     <string name="msg_exit">Please press again to exit</string>
@@ -234,6 +234,10 @@
     <string name="text_add_to_calendar">Calendar</string>
     <string name="text_search">Search</string>
     <string name="text_choose_blood_group">Choose Blood Group</string>
+    <string name="by_clicking_enter_you_agree_to_our_terms_and_conditions">By clicking \'Enter\', you agree to our Terms and Conditions</string>
+    <string name="view_terms_and_conditions">(<u>View Terms and Conditions</u>)</string>
+    <string name="text_terms_and_conditions">Terms and Conditions</string>
+    <string name="terms_and_conditions_details">Details</string>
     <!--<string name="something_went_wrong">Something went wrong</string>-->
 
 </resources>

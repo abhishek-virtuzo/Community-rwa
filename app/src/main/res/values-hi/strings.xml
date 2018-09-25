@@ -138,8 +138,8 @@
     <string name="msg_uniquegeo">कृपया एक अनूठे भूगोल क्षेत्र का चयन करें</string>
     <string name="msg_networkerror">इन्टरनेट से संपर्क नही हो पा रह है| आपकी संग्रक्षित पत्र गुल्लक मे मौजूद है|</string>
     <string name="msg_nointernet">कृपया अपना इन्टरनेट संपर्क जांच ले</string>
-    <string name="msg_nochitti">कृपया गुल्लक मे पत्रों को संरक्षित करें</string>
-    <string name="msg_savebank">संरक्षित</string>
+    <string name="msg_nochitti">कोई बुकमार्क नहीं</string>
+    <string name="msg_savebank">बुकमार्क्स में सहेजा गया</string>
 
     <string name="sharetext_aboutus">भरें अपने ज़िन्दगी को संस्कृति और प्रकृति के रंग से, प्रारंग ऐप को डाउनलोड करने के लिये नीचे दिये लिंक को चुने.</string>
     <string name="msg_exit">बाहर निकलने के लिए कृपया फिर से दबाएं</string>
@@ -241,5 +241,9 @@
     <string name="text_add_to_calendar">कैलेंडर</string>
     <string name="text_search">खोज</string>
     <string name="text_choose_blood_group">रक्त वर्ग चुनें</string>
+    <string name="by_clicking_enter_you_agree_to_our_terms_and_conditions">\'प्रवेश करें\' क्लिक करके, आप हमारे नियमों और शर्तों से सहमत होते हैं</string>
+    <string name="view_terms_and_conditions">(<u>नियम और शर्तें देखें</u>)</string>
+    <string name="text_terms_and_conditions">नियम और शर्तें</string>
+    <string name="terms_and_conditions_details">Details</string>
 
 </resources>
