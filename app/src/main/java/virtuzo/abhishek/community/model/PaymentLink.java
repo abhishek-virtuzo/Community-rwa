@@ -3,7 +3,7 @@ package virtuzo.abhishek.community.model;
 import io.realm.RealmObject;
 
 /**
- * Created by virtuzo on 8/29/2018.
+ * Created by Abhishek Aggarwal on 8/29/2018.
  */
 
 public class PaymentLink extends RealmObject {

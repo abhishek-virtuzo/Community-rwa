@@ -17,7 +17,7 @@ import virtuzo.abhishek.community.model.Resident;
 import virtuzo.abhishek.community.model.ResidentBlock;
 
 /**
- * Created by virtuzo on 7/30/2018.
+ * Created by Abhishek Aggarwal on 7/30/2018.
  */
 
 public class RealmHelper {

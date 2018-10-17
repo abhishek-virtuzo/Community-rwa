@@ -1,7 +1,7 @@
 package virtuzo.abhishek.community.model;
 
 /**
- * Created by virtuzo on 8/2/2018.
+ * Created by Abhishek Aggarwal on 8/2/2018.
  */
 
 public class UserProfile {

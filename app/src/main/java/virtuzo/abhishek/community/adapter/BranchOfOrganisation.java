@@ -1,7 +1,7 @@
 package virtuzo.abhishek.community.adapter;
 
 /**
- * Created by virtuzo on 4/25/2018.
+ * Created by Abhishek Aggarwal on 4/25/2018.
  */
 
 public class BranchOfOrganisation {

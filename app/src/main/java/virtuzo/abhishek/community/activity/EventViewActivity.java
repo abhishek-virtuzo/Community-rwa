@@ -12,7 +12,9 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -64,6 +66,8 @@ public class EventViewActivity extends LangSupportBaseActivity implements Networ
     BaseUtils baseUtils;
     Lang lang;
 
+    Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -104,9 +108,27 @@ public class EventViewActivity extends LangSupportBaseActivity implements Networ
 //        progressDialog = new ProgressDialog(this);
 //        progressDialog.show();
 
+        initToolbar();
         loadContent();
 
         MyFunctions.setStatusBarAndNavigationBarColor(this);
+    }
+
+    private void initToolbar() {
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     public void loadContent() {

@@ -98,4 +98,8 @@
         <item name="android:background">@color/toolbar_bg_color</item>
     </style>
 
+    <style name="unnamedToolbarTheme"  parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/toolbar_text_color</item>
+    </style>
+
 </resources>

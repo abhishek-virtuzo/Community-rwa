@@ -3,7 +3,7 @@ package virtuzo.abhishek.community.adapter;
 import io.realm.RealmObject;
 
 /**
- * Created by virtuzo on 7/9/2018.
+ * Created by Abhishek Aggarwal on 7/9/2018.
  */
 
 public class Panchang extends RealmObject {

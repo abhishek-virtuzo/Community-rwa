@@ -3,7 +3,7 @@ package virtuzo.abhishek.community.model;
 import io.realm.RealmObject;
 
 /**
- * Created by virtuzo on 7/31/2018.
+ * Created by Abhishek Aggarwal on 7/31/2018.
  */
 
 public class Resident extends RealmObject {

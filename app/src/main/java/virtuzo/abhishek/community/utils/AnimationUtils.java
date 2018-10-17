@@ -5,7 +5,7 @@ import android.animation.ObjectAnimator;
 import android.support.v7.widget.RecyclerView;
 
 /**
- * Created by virtuzo on 9/19/2018.
+ * Created by Abhishek Aggarwal on 9/19/2018.
  */
 
 public class AnimationUtils {

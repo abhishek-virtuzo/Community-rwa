@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import virtuzo.abhishek.community.utils.Lang;
 
 /**
- * Created by virtuzo on 7/17/2018.
+ * Created by Abhishek Aggarwal on 7/17/2018.
  */
 
 public class LangSupportBaseActivity extends AppCompatActivity {

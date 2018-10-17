@@ -27,13 +27,13 @@ import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 
 /**
- * Created by virtuzo on 8/24/2018.
+ * Created by Abhishek Aggarwal on 8/24/2018.
  */
 
 public class SyncComplaintsReceiver extends BroadcastReceiver implements Network.Listener {
 
     public static final String TAG = "SyncComplaintsReceiver";
-    Context context;
+    Context context;`
     private boolean allow = true;
 
     @Override

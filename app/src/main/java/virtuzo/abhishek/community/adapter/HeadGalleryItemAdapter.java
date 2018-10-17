@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import virtuzo.abhishek.community.R;
 
 /**
- * Created by virtuzo on 5/8/2018.
+ * Created by Abhishek Aggarwal on 5/8/2018.
  */
 
 public class HeadGalleryItemAdapter extends PagerAdapter {

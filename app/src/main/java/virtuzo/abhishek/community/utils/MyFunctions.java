@@ -12,7 +12,7 @@ import java.util.Locale;
 import virtuzo.abhishek.community.R;
 
 /**
- * Created by virtuzo on 5/7/2018.
+ * Created by Abhishek Aggarwal on 5/7/2018.
  */
 
 public class MyFunctions {

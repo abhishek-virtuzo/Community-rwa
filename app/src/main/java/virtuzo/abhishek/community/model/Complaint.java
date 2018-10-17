@@ -3,7 +3,7 @@ package virtuzo.abhishek.community.model;
 import io.realm.RealmObject;
 
 /**
- * Created by virtuzo on 8/23/2018.
+ * Created by Abhishek Aggarwal on 8/23/2018.
  */
 
 public class Complaint extends RealmObject{
