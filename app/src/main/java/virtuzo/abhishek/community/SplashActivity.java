@@ -75,7 +75,7 @@ public class SplashActivity extends AppCompatActivity {
             }
 
             if (str.size() > 3) {
-                if (!str.get(0).equals("community")) {
+                if (!str.get(0).equals(MyFunctions.AppNameForDeepLinks)) {
                     return false;
                 }
                 if (!str.get(1).equals("app")) {

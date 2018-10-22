@@ -7,7 +7,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -38,6 +37,7 @@ import virtuzo.abhishek.community.adapter.PostItemAdapter;
 import virtuzo.abhishek.community.config.UrlConfig;
 import virtuzo.abhishek.community.utils.BaseUtils;
 import virtuzo.abhishek.community.utils.Lang;
+import virtuzo.abhishek.community.utils.MyFunctions;
 import virtuzo.abhishek.community.utils.Network;
 
 import org.json.JSONArray;
@@ -292,7 +292,7 @@ public class MainPostFragment extends Fragment implements PostItemAdapter.Listne
                 cityPostItem.setLoading(false);
                 key = "citypost";
 
-                String url_string = "http://sirrat.com/community/app/DashboardImages/";
+                String url_string = MyFunctions.DashboardImagesDirectory;
                 String url_extension = ".jpg";
                 headGalleryItemArrayList.clear();
 

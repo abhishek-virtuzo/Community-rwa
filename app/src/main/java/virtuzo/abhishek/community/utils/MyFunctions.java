@@ -24,6 +24,13 @@ public class MyFunctions {
     public static final String Circular_UNREAD = "0";
     public static final String Circular_READ = "1";
 
+    // App level variables
+    public static final String AppNameForDeepLinks = "community"; // 1
+    public static final String DashboardImagesDirectory = "http://sirrat.com/community/app/DashboardImages/"; // 2
+    // PathPrefix for deep links specified in manifest file // 3
+    // App Name in strings.xml // 4
+
+
     public static int StringLength(String s) {
         if(s == null) {
             return 0;
