@@ -86,9 +86,9 @@
 
                     <ImageView
                         android:layout_width="22dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="22dp"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/ic_profile_picture_edit" />
+                        app:srcCompat="@drawable/ic_gallery_white" />
                 </FrameLayout>
 
                 <ImageView

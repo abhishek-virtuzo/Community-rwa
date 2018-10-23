@@ -33,7 +33,7 @@ import virtuzo.abhishek.community.utils.Network;
 public class SyncComplaintsReceiver extends BroadcastReceiver implements Network.Listener {
 
     public static final String TAG = "SyncComplaintsReceiver";
-    Context context;`
+    Context context;
     private boolean allow = true;
 
     @Override
