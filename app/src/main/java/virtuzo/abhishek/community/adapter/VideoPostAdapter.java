@@ -1,8 +1,10 @@
 package virtuzo.abhishek.community.adapter;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.net.Uri;
 import android.os.Build;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
@@ -14,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
@@ -94,6 +97,29 @@ public class VideoPostAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
 //        list.get(position).setImageUrl("eacFaztQvao");
         String str = list.get(position).getVideoIframe();
         Log.e("VideoFrame", str);
+        holder.youtubeViewWebView.setWebViewClient(new WebViewClient() {
+
+            @SuppressWarnings("deprecation")
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView webView, String url)
+            {
+                return shouldOverrideUrlLoading(url);
+            }
+
+            @TargetApi(Build.VERSION_CODES.N)
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView webView, WebResourceRequest request)
+            {
+                Uri uri = request.getUrl();
+                return shouldOverrideUrlLoading(uri.toString());
+            }
+
+            private boolean shouldOverrideUrlLoading(final String url)
+            {
+                // no handling for url to prevent further pages to load (for eg. facebook, google, twitter login, or share, etc.)
+                return true; // Returning True means that application wants to leave the current WebView and handle the url itself, otherwise return false.
+            }
+        });
         holder.youtubeViewWebView.loadData(str, mimeTypeWebView, encodingWebView);
 
         String description = postItem.getDescription();
@@ -204,7 +230,6 @@ public class VideoPostAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
 
             youtubeViewWebView = (WebView) view.findViewById(R.id.youtubeViewWebView);
             youtubeViewWebView.getSettings().setJavaScriptEnabled(true);
-            youtubeViewWebView.setWebViewClient(new WebViewClient());
             youtubeViewWebView.setWebChromeClient(new WebChromeClient());
 
             messageTextView = (TextView) view.findViewById(R.id.messageTextView);
